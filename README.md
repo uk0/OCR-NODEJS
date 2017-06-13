@@ -10,7 +10,7 @@ Install
 ---------
 
 ```bash
-$ npm install n-ocr -S
+$ npm install nocr -S
 ```
 
 How to use
