@@ -1,0 +1,35 @@
+{
+  "name": "n-ocr",
+  "version": "0.1.1",
+  "description": "OCR library pure JavaScript",
+  "main": "index.js",
+  "bin": "bin/n-ocr",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zmatsh/OCR-NODEJS"
+  },
+  "keywords": [
+    "OCR",
+    "ocrad.js",
+    "ocr"
+  ],
+  "author": "zmatsh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zmatsh/OCR-NODEJS/issues"
+  },
+  "homepage": "https://github.com/zmatsh/OCR-NODEJS",
+  "dependencies": {
+    "colo": "^0.2.0",
+    "commander": "^2.5.1",
+    "ocrad.js": "0.0.1",
+    "pngjs": "^0.4.0",
+    "simple-bufferstream": "0.0.4"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1"
+  }
+}
