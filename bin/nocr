@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-
-var okrabyte = require('..');
+var nocr = require('..');
 var colo = require('colo');
 var program = require('commander');
 var package = require('../package.json');
@@ -9,7 +8,7 @@ program.version(package.version)
        .option('-i, --image <image>', 'Input image')
        .parse(process.argv);
 
-okrabyte.decodeFile(program.image, function(err, data){
+nocr.decodeFile(program.image, function(err, data){
   if (err) {
     console.log(colo.red("Error:"));
     console.error(colo.red(err));

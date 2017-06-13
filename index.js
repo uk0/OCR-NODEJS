@@ -3,8 +3,8 @@ var PNG = require('pngjs').PNG;
 var Ocrad = require('ocrad.js');
 var sbuff = require('simple-bufferstream');
 
-var okrabyte = {};
-okrabyte.decodeStream = function(stream, callback) {
+var nocr = {};
+nocr.decodeStream = function(stream, callback) {
   stream.pipe(new PNG({
     filterType: 4
   })).on('parsed', function() {
@@ -25,15 +25,15 @@ okrabyte.decodeStream = function(stream, callback) {
   });
 };
 
-okrabyte.decodeBuffer = function(buffer, callback) {
+nocr.decodeBuffer = function(buffer, callback) {
   var rstream = sbuff(buffer);
   this.decodeStream(rstream, callback);
 };
 
 
-okrabyte.decodeFile = function(file, callback) {
+nocr.decodeFile = function(file, callback) {
   var rstream = fs.createReadStream(file);
   this.decodeStream(rstream, callback);
 };
 
-module.exports = okrabyte;
+module.exports = nocr;
