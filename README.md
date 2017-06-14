@@ -1,16 +1,16 @@
-nocr
+ng-ocr
 ============
 
 [![Build Status](https://travis-ci.org/zmatsh/OCR-NODEJS.svg?branch=master)](https://travis-ci.org/zmatsh/OCR-NODEJS)
 
-nocr is an OCR library pure JavaScript for node.js.
+Ngocr is an OCR library pure JavaScript for node.js.
 We use [ocrad.js](https://github.com/antimatter15/ocrad.js/).
 
 Install
 ---------
 
 ```bash
-$ npm install nocr -S
+$ npm install ng-ocr -S
 ```
 
 How to use
@@ -21,8 +21,8 @@ How to use
 Simple :
 
 ```javascript
-var nocr = require("nocr");
-nocr.decodeFile("test/fixture/hello_world.png", function(error, data){
+var Ngocr = require("Ngocr");
+Ngocr.decodeFile("test/fixture/hello_world.png", function(error, data){
   console.log(data); // Hello World!
 });
 ```
@@ -30,10 +30,10 @@ nocr.decodeFile("test/fixture/hello_world.png", function(error, data){
 From Buffer:
 
 ```javascript
-var nocr = require("nocr");
+var Ngocr = require("Ngocr");
 var fs = require("fs");
 var buffer = fs.readFileSync("test/fixture/hello_world.png");
-nocr.decodeBuffer(buffer, function(error, data){
+Ngocr.decodeBuffer(buffer, function(error, data){
   console.log(data); // Hello World!
 });
 ```
@@ -41,10 +41,10 @@ nocr.decodeBuffer(buffer, function(error, data){
 From Stream:
 
 ```javascript
-var nocr = require("nocr");
+var Ngocr = require("Ngocr");
 var fs = require("fs");
 var stream = fs.createReadStream("test/fixture/hello_world.png");
-nocr.decodeStream(stream, function(error, data){
+Ngocr.decodeStream(stream, function(error, data){
   console.log(data); // Hello World!
 });
 ```

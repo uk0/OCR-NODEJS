@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var nocr = require('..');
+var Ngocr = require('..');
 var colo = require('colo');
 var program = require('commander');
 var package = require('../package.json');
@@ -8,7 +8,7 @@ program.version(package.version)
        .option('-i, --image <image>', 'Input image')
        .parse(process.argv);
 
-nocr.decodeFile(program.image, function(err, data){
+Ngocr.decodeFile(program.image, function(err, data){
   if (err) {
     console.log(colo.red("Error:"));
     console.error(colo.red(err));

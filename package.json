@@ -1,9 +1,9 @@
 {
-  "name": "nocr",
+  "name": "ng-ocr",
   "version": "1.2.0",
   "description": "OCR library pure JavaScript",
   "main": "index.js",
-  "bin": "bin/nocr",
+  "bin": "bin/ng-ocr",
   "scripts": {
     "test": "mocha"
   },
@@ -14,7 +14,7 @@
   "keywords": [
     "OCR",
     "ocrad.js",
-    "ocr"
+    "ng-ocr"
   ],
   "author": "zmatsh",
   "license": "MIT",
