@@ -3,6 +3,8 @@ ng-ocr
 
 [![Build Status](https://travis-ci.org/zmatsh/OCR-NODEJS.svg?branch=master)](https://travis-ci.org/zmatsh/OCR-NODEJS)
 [![Downloads](http://img.shields.io/npm/dm/ng-ocr.svg)](https://npmjs.org/package/ng-ocr)
+[![NPM-Version](https://img.shields.io/npm/v/npm.svg)](https://npmjs.org/package/ng-ocr)
+
 
 Ngocr is an OCR library pure JavaScript for node.js.
 We use [ocrad.js](https://github.com/antimatter15/ocrad.js/).

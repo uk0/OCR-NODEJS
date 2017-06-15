@@ -1,6 +1,6 @@
 {
   "name": "ng-ocr",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "OCR library pure JavaScript",
   "main": "index.js",
   "bin": "bin/ng-ocr",
