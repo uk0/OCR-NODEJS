@@ -24,7 +24,7 @@ How to use
 Simple :
 
 ```javascript
-var Ngocr = require("Ngocr");
+var Ngocr = require("ng-ocr");
 Ngocr.decodeFile("test/fixture/hello_world.png", function(error, data){
   console.log(data); // Hello World!
 });
@@ -33,7 +33,7 @@ Ngocr.decodeFile("test/fixture/hello_world.png", function(error, data){
 From Buffer:
 
 ```javascript
-var Ngocr = require("Ngocr");
+var Ngocr = require("ng-ocr");
 var fs = require("fs");
 var buffer = fs.readFileSync("test/fixture/hello_world.png");
 Ngocr.decodeBuffer(buffer, function(error, data){
@@ -44,7 +44,7 @@ Ngocr.decodeBuffer(buffer, function(error, data){
 From Stream:
 
 ```javascript
-var Ngocr = require("Ngocr");
+var Ngocr = require("ng-ocr");
 var fs = require("fs");
 var stream = fs.createReadStream("test/fixture/hello_world.png");
 Ngocr.decodeStream(stream, function(error, data){
